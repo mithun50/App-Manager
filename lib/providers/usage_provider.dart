@@ -10,7 +10,6 @@ import 'package:app_management/services/notification_service.dart';
 import 'package:app_management/utils/constants.dart';
 
 class UsageProvider extends ChangeNotifier {
-  CategoryProvider? _categoryProvider;
   Timer? _pollingTimer;
 
   bool _isLoading = false;
@@ -26,7 +25,7 @@ class UsageProvider extends ChangeNotifier {
   int get totalMinutesToday => _totalMinutesToday;
 
   void setCategoryProvider(CategoryProvider provider) {
-    _categoryProvider = provider;
+    // Available for future cross-provider logic
   }
 
   Future<void> checkPermission() async {

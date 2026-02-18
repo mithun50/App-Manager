@@ -27,8 +27,8 @@ class NotificationService {
     await _plugin.show(
       categoryId * 10 + 1,
       'Usage Warning',
-      'You\'ve used $percent% of your $categoryName limit ($usedMinutes/${limitMinutes} min)',
-      NotificationDetails(
+      'You\'ve used $percent% of your $categoryName limit ($usedMinutes/$limitMinutes min)',
+      const NotificationDetails(
         android: AndroidNotificationDetails(
           AppConstants.warningChannelId,
           AppConstants.warningChannelName,
@@ -52,7 +52,7 @@ class NotificationService {
       categoryId * 10 + 2,
       'Limit Reached!',
       '$categoryName limit reached ($limitMinutes min). Consider taking a break.',
-      NotificationDetails(
+      const NotificationDetails(
         android: AndroidNotificationDetails(
           AppConstants.warningChannelId,
           AppConstants.warningChannelName,
