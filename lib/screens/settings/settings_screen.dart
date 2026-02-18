@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 import 'package:app_management/providers/settings_provider.dart';
 import 'package:app_management/providers/usage_provider.dart';
@@ -90,10 +91,20 @@ class SettingsScreen extends StatelessWidget {
               const Divider(),
 
               const _SectionHeader(title: 'About'),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: Center(
+                  child: SvgPicture.asset(
+                    'assets/logo.svg',
+                    width: 80,
+                    height: 80,
+                  ),
+                ),
+              ),
               const ListTile(
                 leading: Icon(Icons.info_outline),
                 title: Text('App Manager'),
-                subtitle: Text('Version 1.0.0\nBy Mithun Gowda B'),
+                subtitle: Text('Version 1.0.0'),
               ),
             ],
           );

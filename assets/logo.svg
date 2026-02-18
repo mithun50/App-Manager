@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="32" y="32" width="448" height="448" rx="96" ry="96" fill="url(#bg)"/>
+  <rect x="32" y="32" width="448" height="448" rx="96" ry="96" fill="url(#shine)"/>
+
+  <!-- Clock circle (outer) -->
+  <circle cx="256" cy="240" r="130" fill="none" stroke="white" stroke-width="14" opacity="0.9"/>
+
+  <!-- Clock hour marks -->
+  <line x1="256" y1="124" x2="256" y2="140" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <line x1="256" y1="340" x2="256" y2="356" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <line x1="140" y1="240" x2="156" y2="240" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <line x1="356" y1="240" x2="372" y2="240" stroke="white" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Small hour marks -->
+  <line x1="321" y1="131" x2="315" y2="141" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="365" y1="175" x2="355" y2="181" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="365" y1="305" x2="355" y2="299" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="321" y1="349" x2="315" y2="339" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="191" y1="349" x2="197" y2="339" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="147" y1="305" x2="157" y2="299" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="147" y1="175" x2="157" y2="181" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="191" y1="131" x2="197" y2="141" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Clock hands -->
+  <!-- Hour hand -->
+  <line x1="256" y1="240" x2="256" y2="170" stroke="white" stroke-width="10" stroke-linecap="round"/>
+  <!-- Minute hand -->
+  <line x1="256" y1="240" x2="320" y2="195" stroke="white" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Center dot -->
+  <circle cx="256" cy="240" r="10" fill="white"/>
+
+  <!-- Progress arc (usage indicator ~70%) -->
+  <path d="M 256 110 A 130 130 0 1 1 152 326" fill="none" stroke="#FCD34D" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Bar chart at bottom (3 bars representing categories) -->
+  <rect x="168" y="405" width="36" height="55" rx="6" fill="white" opacity="0.85"/>
+  <rect x="238" y="390" width="36" height="70" rx="6" fill="#FCD34D" opacity="0.9"/>
+  <rect x="308" y="415" width="36" height="45" rx="6" fill="white" opacity="0.6"/>
+</svg>

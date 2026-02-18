@@ -1,0 +1,58 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Clock circle -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:pathData="M54,46m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"/>
+
+    <!-- Hour marks (12, 3, 6, 9) -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:strokeLineCap="round"
+        android:pathData="M54,20L54,24"/>
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:strokeLineCap="round"
+        android:pathData="M54,68L54,72"/>
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:strokeLineCap="round"
+        android:pathData="M28,46L32,46"/>
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:strokeLineCap="round"
+        android:pathData="M76,46L80,46"/>
+
+    <!-- Hour hand (pointing up) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,46L54,30"/>
+
+    <!-- Minute hand (pointing to ~2 o'clock) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M54,46L68,36"/>
+
+    <!-- Center dot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,46m-2.2,0a2.2,2.2 0,1 1,4.4 0a2.2,2.2 0,1 1,-4.4 0"/>
+
+    <!-- Usage arc (yellow, ~70%) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FCD34D"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,18 A28,28 0,1 1,31.6,64.5"/>
+
+    <!-- Bar chart (3 bars at bottom) -->
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.85"
+        android:pathData="M35,82 L35,93 Q35,95 37,95 L41,95 Q43,95 43,93 L43,82 Q43,80 41,80 L37,80 Q35,80 35,82Z"/>
+    <path android:fillColor="#FCD34D" android:fillAlpha="0.9"
+        android:pathData="M49,78 L49,93 Q49,95 51,95 L55,95 Q57,95 57,93 L57,78 Q57,76 55,76 L51,76 Q49,76 49,78Z"/>
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.6"
+        android:pathData="M63,85 L63,93 Q63,95 65,95 L69,95 Q71,95 71,93 L71,85 Q71,83 69,83 L65,83 Q63,83 63,85Z"/>
+</vector>
